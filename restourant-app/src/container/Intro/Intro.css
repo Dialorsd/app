@@ -1,0 +1,40 @@
+.app__video {
+    height:100vh;
+    position: relative;
+
+}
+
+.app__video video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.app__video-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.app__video-overlay_circle:hover{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:1px solid var(--color-golden);
+    cursor:pointer;
+}
+
+@media screen and (min-width:2000px){
+    
+}
+@media screen and (max-width:1150px){
+    .app__video {
+        height:100%;
+    }
+}
+@media screen and (max-width:650px){
+    .app__video {
+        height:100%;
+        background-color: black;
+    }
+}
